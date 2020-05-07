@@ -31,7 +31,17 @@ Outbound communications
 -	Underwater challenges for Cellular
 -	Roaming
 -	Protocols
+-	Multiplexing types
+-	- FDM (Frequency Division Multiplexing) 
+-	- TDM (Time Division Multiplexing)
+-	- CDMA (Code Division Multiplexing)
 -	Cellular technologies
+-	- GSM
+-	- GSPS
+-	- CDMA
+-	- 3G 
+-	- 4G
+-	- 5G
 -	- Pros & Cons of different technologies
 
 
