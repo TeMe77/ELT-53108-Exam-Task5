@@ -1,5 +1,17 @@
-Task 4: The ARP problem (security)
-The ambiguity of ARP process (both in context of two hosts having mistakenly taken same addresses, as well as malicious misuse for MITM attacks) is a major unresolved issues in modern Ethernet (and Wi-Fi) networks. There are plenty of solutions proposed to date, but none of them appear to have been adopted widely in IPv4 networks. Your task is to develop a site-specific protocol, which will be adopted at a particular company rather than globally in the Internet. This, clearly, gives you capability to modify the hosts in the network, but does not give you access to modify the firmware of any switches and routers that you may purchase and install on the site. Overall, the protocol must enable the following: a client machine (e.g. employee's laptop) needs to be able to resolve the IP-MAC mapping for any host within the corporate network in a secure manner. It should be possible for the network administrators to add and remove hosts in the network without having to update configuration on every machine (as some employees may be at home during updates, and will expect their connection to "just work" when they come to work).
+Task 4: The ARP problem (security) 
+The ambiguity of ARP process (both in context of two hosts having mistakenly taken 
+same addresses, as well as malicious misuse for MITM attacks) is a major unresolved 
+issues in modern Ethernet (and Wi-Fi) networks. There are plenty of solutions proposed 
+to date, but none of them appear to have been adopted widely in IPv4 networks. Your 
+task is to develop a site-specific protocol, which will be adopted at a particular company 
+rather than globally in the Internet. This, clearly, gives you capability to modify the hosts 
+in the network, but does not give you access to modify the firmware of any switches and 
+routers that you may purchase and install on the site. Overall, the protocol must enable 
+the following: a client machine (e.g. employee's laptop) needs to be able to resolve the 
+IP-MAC mapping for any host within the corporate network in a secure manner. It should 
+be possible for the network administrators to add and remove hosts in the network 
+without having to update configuration on every machine (as some employees may be at 
+home during updates, and will expect their connection to "just work" when they come to 
+work).
 	ELT-53108 Computer Networking II
 	Task 4
-
