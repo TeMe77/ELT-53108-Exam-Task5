@@ -25,6 +25,8 @@ Challenges for underwater communication
 -	physical limitations
 Communications inside Submarine
 -	Underwater Wi-Fi
+-	- 2.4 Ghz VS 5 Ghz 
+-	- Signal penetration reflections and absorbtion
 -	Protocols
 Outbound communications
 -	Ultrasound Cellular Network
@@ -35,7 +37,7 @@ Outbound communications
 -	- FDM (Frequency Division Multiplexing) 
 -	- TDM (Time Division Multiplexing)
 -	- CDMA (Code Division Multiplexing)
--	Cellular technologies
+-	Cellular technologies 3GPP
 -	- GSM
 -	- GSPS
 -	- CDMA
