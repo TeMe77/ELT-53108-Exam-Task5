@@ -3,7 +3,7 @@ Task 5: Submarine communications (latency)
 In a dystopian far future humanity had to move to the deep underwater to avoid horrible 
 pollution on the surface. All satellites have been lost due to massive amount of debris in 
 orbit. While major settlements are connected with fiber, small submarines and people 
-working underwater still need to talk. Luckily, WiFi appeared to work mostly unchanged, 
+working underwater still need to talk. Luckily, Wi-Fi appeared to work mostly unchanged, 
 but its range was greatly limited to about 10m.  However, a variant of cellular network 
 was needed that would work well underwater at longer ranges, up to 1 kilometer. As 
 such, it would need to rely on ultrasound as physical layer. There are two specific issues 
@@ -16,4 +16,22 @@ communications are possible
 with base station, as well as handover from one base station to another (you may 
 assume other procedures are taken care of). The network must be provisioned to 
 support several users at the same base station at any given time.
+
+SUBMARINE NETWORK PROJECT 0.1
+Submarine communications
+-	Different use cases
+-	- Technologies & requirements
+Challenges for underwater communication
+-	physical limitations
+Communications inside Submarine
+-	Underwater Wi-Fi
+-	Protocols
+Outbound communications
+-	Ultrasound Cellular Network
+-	Underwater challenges for Cellular
+-	Roaming
+-	Protocols
+-	Cellular technologies
+-	- Pros & Cons of different technologies
+
 
