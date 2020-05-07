@@ -1,5 +1,5 @@
-# ELT-53108-Exam-Task4
-ELT-53108 Computer Networking II, Exam Task 4, Merisalo &amp; Kivistö
+# ELT-53108-Exam-Task5
+ELT-53108 Computer Networking II, Exam Task 5, Merisalo &amp; Kivistö
 
 You may work in groups of up to 3 people, if you do so the assignment number is calculated by adding all IDs together and then taking mod 6 to get the assignment number . Group work must be clearly indicated in submission, all members of the group will receive the same grade irrespective of the contributions made by each individual. Any group work must be carried out with version control, such that author identity may be clearly tracked throughout the project history (in case of plagiarism etc). You may use github or TU git repositories for that, as long as full VCS history is made available to the teacher. Individual contribuitions do not have to be version control tracked, but doing so may be a good idea anyway. You will have to do the reviews individually (even if you act as a group for primary submission).
 
