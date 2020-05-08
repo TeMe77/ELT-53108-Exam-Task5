@@ -41,9 +41,9 @@ In TDM every user are operating in same frequency but they are divided in differ
 -	- CDMA (Code Division Multiplexing)
 In CDMA several users can use same medium and frequency at the same time. Users are separated with unique codes. 
 -	Cellular technologies 3GPP
--	- GSM
--	- GSPS
--	- CDMA
+-	- GSM (Global System for Mobile communication)
+-	- GSPS (General Packet Radio Services)
+-	- CDMA (Code Division Multiple Access)
 -	- 3G 
 -	- 4G
 -	- 5G
