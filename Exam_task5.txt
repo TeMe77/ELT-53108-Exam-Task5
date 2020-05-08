@@ -72,9 +72,13 @@ power cables with fiber (power cables can cause noise for copper cables).
 Outband communication are used for to communicate other vessels and joining to global network. 
 
 --Communication with other vessels
-It is important that submarine knows other vessels position, estimated route and status. 
-In example radar could terminate position of other vessels. Radar sends radio wawes and waits it to echo back and counts the postion of other vessels. 
-Radar could use both TCP and UDP protocols. It is  
+Communicating with other vessels is important in many ways. Communicating with other vessel we could use message-based systems with for example techniques like SMS (Short Message Service) or anything like that. SMS is widely used in mobile devices. SMS are used in techniques like GSM. Benefit to use low radio wawes in submarine is that low frequency traffic is transported in water better than high frequency traffic. 
+Another communicating type could be internet calls like VoIP and videocalls. VoIP and videocalls could be used when there is important negotions in the dock between submarines where there are better connections to other vessels. Long distance calls we could use for example low frequency calls directly to other vessels or via base station
+
+It is important that submarine knows other vessels position, estimated route and status. In example radar could terminate position of other vessels. Radar sends radio wawes and waits it to echo back and counts the postion of other vessels. Radar could use both TCP and UDP protocols based from the application requirements. Some radar systems can tolerate packet loss and reordering packets. Then you could use UDP based design in you system. Using UDP-based postitioning system is more precise and faster determinig postitions. On the otherhand  if you application do not tolerate packet loss or reorderin packets then you have to use TCP-based design. Benefits to use TCP-based system is that it won't consume so much resources because fewer amount of packets are transferred but determinating positioning and estimated route takes more time that UDP-based system.
+
+Systems that are used for communicating another vessels and radar systems are critical traffic from a submarine perspective. Those two types of communication is important that they have on frequency which they operate. Congested frequency could cause packetloss, delay, jitter and loss of signal.
+
 
 --Communication with Base stations
 		
