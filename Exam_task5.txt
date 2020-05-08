@@ -1,22 +1,4 @@
 Task 5: Submarine communications (latency)
- 
-In a dystopian far future humanity had to move to the deep underwater to avoid horrible 
-pollution on the surface. All satellites have been lost due to massive amount of debris in 
-orbit. While major settlements are connected with fiber, small submarines and people 
-working underwater still need to talk. Luckily, Wi-Fi appeared to work mostly unchanged, 
-but its range was greatly limited to about 10m.  However, a variant of cellular network 
-was needed that would work well underwater at longer ranges, up to 1 kilometer. As 
-such, it would need to rely on ultrasound as physical layer. There are two specific issues 
-with that: 
- * Speed of sound is very low compared to light speed, which delays any signaling from 
-base station to mobile device a lot 
- * Bandwidths are very limited (64 frequency channels of 8 kbps each), so only voice 
-communications are possible 
- You need to consider the protocols that would handle signaling related to association 
-with base station, as well as handover from one base station to another (you may 
-assume other procedures are taken care of). The network must be provisioned to 
-support several users at the same base station at any given time.
-
 SUBMARINE NETWORK PROJECT 0.1
 Submarine communications
 -	Different use cases
@@ -34,19 +16,67 @@ Outbound communications
 -	Roaming
 -	Protocols
 -	Multiplexing technique
+<<<<<<< HEAD
 -	- FDM (Frequency Division Multiplexing) 
 In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. 
+=======
+-	-FDM (Frequency Division Multiplexing) 
+In FDM every user is operating in different frequency. All frequencies 
+can travel at the same time across the medium. 
+>>>>>>> 7efac9fc2f6a1970598c7498b0c460a479272c56
 -	- TDM (Time Division Multiplexing)
-In TDM every user are operating in same frequency but they are divided in different time slots so they appear to work parallel. 
+In TDM every user is operating in same frequency but they are divided in 
+different time slots so they appear to work parallel. 
 -	- CDMA (Code Division Multiplexing)
-In CDMA several users can use same medium and frequency at the same time. Users are separated with unique codes. 
+In CDMA several users can use same medium and frequency at the same time. 
+Users are separated with unique codes. 
 -	Cellular technologies 3GPP
+<<<<<<< HEAD
 -	- GSM (Global System for Mobile communication)
 -	- GSPS (General Packet Radio Services)
 -	- CDMA (Code Division Multiple Access)
 -	- 3G (Third Generation)
 -	- 4G (Fourth Generatio)
 -	- 5G (Fifth Generation)
+=======
+-	- GSM
+-	- GSPS
+-	- CDMA
+-	- 3G 
+-	- 4G
+-	- 5G
+>>>>>>> 7efac9fc2f6a1970598c7498b0c460a479272c56
 -	- Pros & Cons of different technologies
+
+Submarine communications
+	
+-Different use cases
+Submarine networking and communications can be divided for internal use 
+within the ship and outbound use which includes all outbound connections 
+and transmissions from the ship.
+--Submarine Internal Use
+Internal connections are used for gathering data from sensors all around 
+the submarine and for communications within the crew.
+---Systems and sensors
+Internal network is used for data from sensors and access control 
+devices. Sensors can send data directly with UDP-protocol and access 
+control devices would work with UDP- and TCP-protocols. TCP-protocol for 
+access control is chosen over UDP, because user can get confirmations 
+about sent data.
+---Internal Communication
+Internal network for crew communications is done by wire, network is 
+wired mainly by optical fiber. Fiber is chosen over copper because 
+submarine have tight spaces for wiring and wiring can be done next to 
+power cables with fiber (power cables can cause noise for copper cables).
+-Outband Use Cases
+Outband communication are used for to communicate other vessels and joining to global network. 
+
+--Communication with other vessels
+It is important that submarine knows other vessels position, estimated route and status. 
+In example radar could terminate position of other vessels. Radar sends radio wawes and waits it to echo back and counts the postion of other vessels. 
+Radar could use both TCP and UDP protocols. It is  
+
+--Communication with Base stations
+		
 
 
