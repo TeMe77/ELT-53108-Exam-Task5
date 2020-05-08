@@ -80,7 +80,12 @@ It is important that submarine knows other vessels position, estimated route and
 Systems that are used for communicating another vessels and radar systems are critical traffic from a submarine perspective. Those two types of communication is important that they have on frequency which they operate. Congested frequency could cause packetloss, delay, jitter and loss of signal.
 
 
---Communication with Base stations
+--Communication with cellular network
+Basically almost all communication from submarine is going throw base stations for example cellular networks. In exceptions you could think examples radar systems and communication systems that are used to communicate straight to vessel-to-vessel.
+If there comes such a time. Dystopia or utopia and there comes need to implement cellular network in the ocean there is important that that cells have decent connection to each other. There must be adequate signal to other cells that users(submarines) won't suffer from connections bad quality that could cause packet loss, jitter and packet delay. 
+
+There are many cellular technologies which can be used in cellular networks. For example you could think using GSM, GPRS, CDMA, EDGE, UMTS, 3G, 4G, 5G tehcnologies. One main thing to remember is that in water low frequency travels better so high frequency techniques have much shorter distance than in air. 
+Multiplexin techniques such as FDM, TDM and CDMA enables users to communicate at the same time using same channel.
 		
 
 
