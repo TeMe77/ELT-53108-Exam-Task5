@@ -34,7 +34,7 @@ Outbound communications
 -	Roaming
 -	Protocols
 -	Multiplexing technique
--	-FDM (Frequency Division Multiplexing) 
+-	- FDM (Frequency Division Multiplexing) 
 In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. 
 -	- TDM (Time Division Multiplexing)
 In TDM every user are operating in same frequency but they are divided in different time slots so they appear to work parallel. 
@@ -44,9 +44,9 @@ In CDMA several users can use same medium and frequency at the same time. Users 
 -	- GSM (Global System for Mobile communication)
 -	- GSPS (General Packet Radio Services)
 -	- CDMA (Code Division Multiple Access)
--	- 3G 
--	- 4G
--	- 5G
+-	- 3G (Third Generation)
+-	- 4G (Fourth Generatio)
+-	- 5G (Fifth Generation)
 -	- Pros & Cons of different technologies
 
 
