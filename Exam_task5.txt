@@ -8,7 +8,7 @@ Challenges for underwater communication
 Communications inside Submarine
 -	Underwater Wi-Fi
 -	- 2.4 Ghz VS 5 Ghz 
--	- Signal penetration reflections and absorbtion
+-	- Signal penetration reflections and absorption
 -	Protocols
 Outbound communications
 -	Ultrasound Cellular Network
@@ -16,12 +16,14 @@ Outbound communications
 -	Roaming
 -	Protocols
 -	Multiplexing technique
-<<<<<<< HEAD
-
 -	- FDM (Frequency Division Multiplexing) 
 In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. 
+=======
+-	-FDM (Frequency Division Multiplexing) 
+In FDM every user is operating in different frequency. All frequencies 
+can travel at the same time across the medium. 
 -	- TDM (Time Division Multiplexing)
-In TDM every user is operating in same frequency but they are divided in 
+In TDM every user is operating in same frequency, but they are divided in 
 different time slots so they appear to work parallel. 
 -	- CDMA (Code Division Multiplexing)
 In CDMA several users can use same medium and frequency at the same time. 
@@ -31,8 +33,15 @@ Users are separated with unique codes.
 -	- GSPS (General Packet Radio Services)
 -	- CDMA (Code Division Multiple Access)
 -	- 3G (Third Generation)
--	- 4G (Fourth Generatio)
+-	- 4G (Fourth Generation)
 -	- 5G (Fifth Generation)
+=======
+-	- GSM
+-	- GSPS
+-	- CDMA
+-	- 3G 
+-	- 4G
+-	- 5G
 -	- Pros & Cons of different technologies
 
 Submarine communications
@@ -48,31 +57,32 @@ the submarine and for communications within the crew.
 Internal network is used for data from sensors and access control 
 devices. Sensors can send data directly with UDP-protocol and access 
 control devices would work with UDP- and TCP-protocols. TCP-protocol for 
-access control is chosen over UDP, because user can get confirmations 
+access control is chosen over UDP because user can get confirmations 
 about sent data.
 ---Internal Communication
 Internal network for crew communications is done by wire, network is 
 wired mainly by optical fiber. Fiber is chosen over copper because 
 submarine have tight spaces for wiring and wiring can be done next to 
 power cables with fiber (power cables can cause noise for copper cables).
--Outband Use Cases
-Outband communication are used for to communicate other vessels and joining to global network. 
+-Outbound Use Cases
+Outbound communications are used to communicate with other vessels and joining to global network. 
 
 --Communication with other vessels
-Communicating with other vessels is important in many ways. Communicating with other vessel we could use message-based systems with for example techniques like SMS (Short Message Service) or anything like that. SMS is widely used in mobile devices. SMS are used in techniques like GSM. Benefit to use low radio wawes in submarine is that low frequency traffic is transported in water better than high frequency traffic. 
-Another communicating type could be internet calls like VoIP and videocalls. VoIP and videocalls could be used when there is important negotions in the dock between submarines where there are better connections to other vessels. Long distance calls we could use for example low frequency calls directly to other vessels or via base station
+Communicating with other vessels is important in many ways. Communicating with other vessel we could use message-based systems with for example techniques like SMS (Short Message Service) or anything like that. SMS is widely used in mobile devices. SMS are used in techniques like GSM. Benefit to use low radio waves in submarine is that low frequency traffic is transported in water better than high frequency traffic. 
+Another communicating type could be internet calls like VoIP and videocalls. VoIP and videocalls could be used when there are important negotions in the dock between submarines where there are better connections to other vessels. Long distance calls we could use for example low frequency calls directly to other vessels or via base station
 
-It is important that submarine knows other vessels position, estimated route and status. In example radar could terminate position of other vessels. Radar sends radio wawes and waits it to echo back and counts the postion of other vessels. Radar could use both TCP and UDP protocols based from the application requirements. Some radar systems can tolerate packet loss and reordering packets. Then you could use UDP based design in you system. Using UDP-based postitioning system is more precise and faster determinig postitions. On the otherhand  if you application do not tolerate packet loss or reorderin packets then you have to use TCP-based design. Benefits to use TCP-based system is that it won't consume so much resources because fewer amount of packets are transferred but determinating positioning and estimated route takes more time that UDP-based system.
+It is important that submarine knows other vessels position, estimated route and status. In example radar could terminate position of other vessels. Radar sends radio waves and waits it to echo back and counts the position of other vessels. Radar could use both TCP and UDP protocols based from the application requirements. Some radar systems can tolerate packet loss and reordering packets. Then vessel could use UDP based design in vessel’s system. Using UDP-based positioning system is more precise and faster determining positions, on the other hand if you application do not tolerate packet loss or reordering packets then you must use TCP-based design. Benefits to use TCP-based system is that it won't consume so much resources because fewer number of packets are transferred but determination of positioning and estimated route takes more time that UDP-based system.
 
-Systems that are used for communicating another vessels and radar systems are critical traffic from a submarine perspective. Those two types of communication is important that they have on frequency which they operate. Congested frequency could cause packetloss, delay, jitter and loss of signal.
+Systems that are used for communicating another vessels and radar systems are critical traffic from a submarine perspective. Those two types of communication are important that they have on frequency which they operate. Congested frequency could cause packet loss, delay, jitter and loss of signal.
 
+Submarines could use multi-path technologies to gain higher data rates in close connections. Faster network can be achieved by summarizing two technologies together as multi-path. Submarines could use low frequency Wi-Fi antennas and cellular technologies at same time while communicating between ships or base stations. When vessel is out of Wi-Fi range vessel will only communicate through cellular network and send only necessary packets.
 
 --Communication with cellular network
-Basically almost all communication from submarine is going throw base stations for example cellular networks. In exceptions you could think examples radar systems and communication systems that are used to communicate straight to vessel-to-vessel.
-If there comes such a time. Dystopia or utopia and there comes need to implement cellular network in the ocean there is important that that cells have decent connection to each other. There must be adequate signal to other cells that users(submarines) won't suffer from connections bad quality that could cause packet loss, jitter and packet delay. 
+Basically, almost all communication from submarine is going throw base stations for example cellular networks. In exceptions you could think examples radar systems and communication systems that are used to communicate straight to vessel-to-vessel.
+If there comes such a time. Dystopia or utopia and there comes need to implement cellular network in the ocean there is important that that cells have decent connection to each other. There must be adequate signal to other cells that users(submarines) won't suffer from connections bad quality that could cause packet loss, jitter, and packet delay. 
 
-There are many cellular technologies which can be used in cellular networks. For example you could think using GSM, GPRS, CDMA, EDGE, UMTS, 3G, 4G, 5G tehcnologies. One main thing to remember is that in water low frequency travels better so high frequency techniques have much shorter distance than in air. 
-Multiplexin techniques such as FDM, TDM and CDMA enables users to communicate at the same time using same channel.
+There are many cellular technologies which can be used in cellular networks. For example, you could think using GSM, GPRS, CDMA, EDGE, UMTS, 3G, 4G, 5G technologies. One main thing to remember is that in water low frequency travels better so high frequency techniques have much shorter distance than in air. 
+Multiplexing techniques such as FDM, TDM and CDMA enables users to communicate at the same time using same channel.
 		
 
 
