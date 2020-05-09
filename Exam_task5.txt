@@ -180,6 +180,7 @@ This higher speed was made possible modulation technique OFDMA
 (Orthogonal Frequency Division Multiple Access) and antenna technique 
 MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside 
 to communication both end devices and base stations. 
+	WiMAX (Worldwide Interoperability for Microwave Access) used frequency band of 20 GHz - 66 GHz and data speed can be up to 75 Mbps. 
 
 Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 5G frequancy bands can be divided in few category. Low-band frequancy 600-700MHz can deliver data speed 30 Mbps - 150 Mbps. Mid-band uses microwawe frequancy 2.5 GHz- 3.7 GHz delivering data speed 100 Mbps -  900 Mbps. High-band uses frequancy 25 GHz - 39 GHz and can deliver data speed up to 1 - 3 Gbps. 
 
