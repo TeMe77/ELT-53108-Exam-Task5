@@ -17,7 +17,8 @@ Outbound communications
 -	Protocols
 -	Multiplexing technique
 -	- FDMA (Frequency Division Multiplexing Access) 
-In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. 
+In FDM every user is operating in different frequency. All frequencies 
+can travel at the same time across the medium. 
 -	- TDMA (Time Division Multiplexing Access)
 In TDM every user is operating in same frequency, but they are divided in 
 different time slots so they appear to work parallel. 
@@ -37,58 +38,164 @@ Submarine communications
 	
 -Different use cases
 Submarine networking and communications can be divided for internal use 
-within the ship and outbound use which includes all outbound connections 
+inside the ship and outbound use, which includes all outbound connections 
 and transmissions from the ship.
+
 --Submarine Internal Use
-Internal connections are used for gathering data from sensors all around 
-the submarine and for communications within the crew.
+Internal connections can be used for gathering data from sensors all 
+around the submarine and for communications within the vessel’s crew. 
+Sensors doesn’t need high bit rates, voice communication and data 
+transfers from the crew are high priority and need high data rate.
+
 ---Systems and sensors
 Internal network is used for data from sensors and access control 
 devices. Sensors can send data directly with UDP-protocol and access 
 control devices would work with UDP- and TCP-protocols. TCP-protocol for 
 access control is chosen over UDP because user can get confirmations 
-about sent data.
+about sent data. Sensors are continuously updating data about state of 
+submarine and its premises. Vessel have control room and server premises 
+for all data gathering and monitoring.
+
 ---Internal Communication
 Internal network for crew communications is done by wire, network is 
 wired mainly by optical fiber. Fiber is chosen over copper because 
 submarine have tight spaces for wiring and wiring can be done next to 
-power cables with fiber (power cables can cause noise for copper cables).
--Outbound Use Cases
-Outbound communications are used to communicate with other vessels and joining to global network. 
+power cables with fiber (power cables can cause noise for copper cables). 
+Internal communication could be done by Wi-Fi also, but it needs wired 
+core network in every section of submarine. Wi-Fi coverage can be 
+achieved by adding access points to every section of vessel.
+
+---- Wi-Fi for submarine and it’s challenges
+Wi-Fi network is fast and decently reliable to use for fixed size of 
+area, but it comes with great challenges as we talk about submarine use. 
+Vessel is divided into many sections and it forces to have minimum one 
+access point per section and all of them connected by wire. Even if all 
+of vessel’s sections would be open and powerful Wi-Fi antennas are in 
+use, sections can act as faraday cage and block connection between 
+sections. While Wi-Fi could be more flexible to use inside submarines 
+sections, wired connection would be still preferable choice due to its 
+reliability.
+
+-Outbound communications 
+Outbound communications are used to communicate with other vessels and 
+joining to global network. Data is transferred mostly by cellular 
+networks, but also Wi-Fi can be used in close range transfers.
 
 --Communication with other vessels
-Communicating with other vessels is important in many ways. Communicating with other vessel we could use message-based systems with for example techniques like SMS (Short Message Service) or anything like that. SMS is widely used in mobile devices. SMS are used in techniques like GSM. Benefit to use low radio waves in submarine is that low frequency traffic is transported in water better than high frequency traffic. 
-Another communicating type could be internet calls like VoIP and videocalls. VoIP and videocalls could be used when there are important negotions in the dock between submarines where there are better connections to other vessels. Long distance calls we could use for example low frequency calls directly to other vessels or via base station
+Communicating with other vessels is important in many ways. Communicating 
+with other vessel we could use message-based systems with for example 
+techniques like SMS (Short Message Service) or anything like that. SMS is 
+widely used in mobile devices. SMS are used in techniques like GSM. 
+Benefit to use low radio waves in submarine is that low frequency traffic 
+is transported in water better than high frequency traffic. 
+Another communicating type could be internet calls like VoIP and 
+videocalls. VoIP and videocalls could be used when there are important 
+negotions in the dock between submarines where there are better 
+connections to other vessels. Long distance calls we could use for 
+example low frequency calls directly to other vessels or via base station
 
-It is important that submarine knows other vessels position, estimated route and status. In example radar could terminate position of other vessels. Radar sends radio waves and waits it to echo back and counts the position of other vessels. Radar could use both TCP and UDP protocols based from the application requirements. Some radar systems can tolerate packet loss and reordering packets. Then vessel could use UDP based design in vessel’s system. Using UDP-based positioning system is more precise and faster determining positions, on the other hand if you application do not tolerate packet loss or reordering packets then you must use TCP-based design. Benefits to use TCP-based system is that it won't consume so much resources because fewer number of packets are transferred but determination of positioning and estimated route takes more time that UDP-based system.
+It is important that submarine knows other vessels position, estimated 
+route and status. In example radar could terminate position of other 
+vessels. Radar sends radio waves and waits it to echo back and counts the 
+position of other vessels. Radar could use both TCP and UDP protocols 
+based from the application requirements. Some radar systems can tolerate 
+packet loss and reordering packets. Then vessel could use UDP based 
+design in vessel’s system. Using UDP-based positioning system is more 
+precise and faster determining positions, on the other hand if you 
+application do not tolerate packet loss or reordering packets then you 
+must use TCP-based design. Benefits to use TCP-based system is that it 
+won't consume so much resources because fewer number of packets are 
+transferred but determination of positioning and estimated route takes 
+more time that UDP-based system.
 
-Systems that are used for communicating another vessels and radar systems are critical traffic from a submarine perspective. Those two types of communication are important that they have on frequency which they operate. Congested frequency could cause packet loss, delay, jitter and loss of signal.
+Systems that are used for communicating another vessels and radar systems 
+are critical traffic from a submarine perspective. Those two types of 
+communication are important that they have on frequency which they 
+operate. Congested frequency could cause packet loss, delay, jitter and 
+loss of signal.
 
-Submarines could use multi-path technologies to gain higher data rates in close connections. Faster network can be achieved by summarizing two technologies together as multi-path. Submarines could use low frequency Wi-Fi antennas and cellular technologies at same time while communicating between ships or base stations. When vessel is out of Wi-Fi range vessel will only communicate through cellular network and send only necessary packets.
+Submarines could use multi-path technologies to gain higher data rates in 
+close connections. Faster network can be achieved by summarizing two 
+technologies together as multi-path. Submarines could use low frequency 
+Wi-Fi antennas and cellular technologies at same time while communicating 
+between ships or base stations. When vessel is out of Wi-Fi range vessel 
+will only communicate through cellular network and send only necessary 
+packets. Default choice for network are cellular technologies and Wi-Fi 
+as secondary.
 
 --Communication with cellular network
-Basically, almost all communication from submarine is going throw base stations for example cellular networks. In exceptions you could think examples radar systems and communication systems that are used to communicate straight to vessel-to-vessel.
-If there comes such a time. Dystopia or utopia and there comes need to implement cellular network in the ocean there is important that that cells have decent connection to each other. There must be adequate signal to other cells that users(submarines) won't suffer from connections bad quality that could cause packet loss, jitter, and packet delay. 
+Basically, almost all communication from submarine is going throw base 
+stations for example cellular networks. In exceptions you could think 
+examples radar systems and communication systems that are used to 
+communicate straight to vessel-to-vessel.
+If there comes such a time. Dystopia or utopia and there comes need to 
+implement cellular network in the ocean there is important that that 
+cells have decent connection to each other. There must be adequate signal 
+to other cells that users(submarines) won't suffer from connections bad 
+quality that could cause packet loss, jitter, and packet delay. 
 
-There are many cellular technologies which can be used in cellular networks. For example, you could think using GSM, GPRS, CDMA, EDGE, UMTS, 3G, 4G, 5G technologies. One main thing to remember is that in water low frequency travels better so high frequency techniques have much shorter distance than in air. 
-Multiplexing techniques such as FDM, TDM and CDMA enables users to communicate at the same time using same channel.
+There are many cellular technologies which can be used in cellular 
+networks. For example, you could think using GSM, GPRS, CDMA, EDGE, UMTS, 
+3G, 4G, 5G technologies. One main thing to remember is that in water low 
+frequency travels better so high frequency techniques have much shorter 
+distance than in air. 
+Multiplexing techniques such as FDM, TDM and CDMA enables users to 
+communicate at the same time using same channel.
 		
-
--Outband Communications
-
 --History of mobile network:
-Fist generation (1G) mobile technology such as NMT enabled users to carry phone without cable connect to it. There were two major problems in this. Connection used analog signals to transfer data to reciever. That was errorprone way to transfer data because analog signal is more sensitive to interference than digitan signal. Other problem was that First generation used FDMA (Frequency Division Multiple Access) modulation technique to reserve frequency from base stations, which reserved available spectrum inefficient way. 
-	NMT (Nordiska MobileTelefongruppen) first used frequency band of 450MHz but when capasity was running out 900MHz frequency band was introduced in many countries to NMT use. 
+Fist generation (1G) mobile technology such as NMT enabled users to carry 
+phone without cable connect to it. There were two major problems in this. 
+Connection used analog signals to transfer data to receiver. That was 
+errorprone way to transfer data because analog signal is more sensitive 
+to interference than digital signal. Other problem was that First 
+generation used FDMA (Frequency Division Multiple Access) modulation 
+technique to reserve frequency from base stations, which reserved 
+available spectrum inefficient way. 
+	NMT (Nordiska MobileTelefongruppen) first used frequency band 
+of 450MHz but when capacity was running out 900MHz frequency band was 
+introduced in many countries to NMT use. 
 
-Second generation (2G) mobile technology such as GSM, CDMA and EDGE used modulation techniques as TDMA and CDMA. 2G also intruduced dataservice (50Kbps) and internet browsing. 
-	GSM (Global System for Mobile Communications) first used frequency band of 900MHz but when capasity was running out 1800MHz frequency band was introduced in many countries to GSM use. Also 850MHz and 1900MHz was introduced to use in some countries. Mainly in USA. So frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
+Second generation (2G) mobile technology such as GSM, CDMA and EDGE used 
+modulation techniques as TDMA and CDMA. 2G also introduced data service 
+(50Kbps) and internet browsing. 
+	GSM (Global System for Mobile Communications) first used 
+frequency band of 900MHz but when capacity was running out 1800MHz 
+frequency band was introduced in many countries to GSM use. Also, 850MHz 
+and 1900MHz was introduced to use in some countries. Mainly in USA. So, 
+frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
 
-Third generation (3G) mobile technology such as WCDMA and HSPA was focused to give higher data transfer speed and increased bandwith (2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were Used WCDMA (Wideband Code Divion Multiple Access). 3G was a great step moving from basic phone to smartphone.
-	HSPA (High-Speed Packet Access) has few standards itself HSDPA (High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands than GSM. Used frequency bands were 850MHz and 1900MHz.
+Third generation (3G) mobile technology such as WCDMA and HSPA was 
+focused to give higher data transfer speed and increased bandwidth 
+(2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were 
+Used WCDMA (Wideband Code Division Multiple Access). 3G was a great step 
+moving from basic phone to smartphone.
+	HSPA (High-Speed Packet Access) has few standards itself HSDPA 
+(High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet 
+Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands 
+than GSM. Used frequency bands were 850MHz and 1900MHz.
 
-Fourth generation (4G) mobile technology such as WiMAX data speed 20-100Mbps was suitable for high resolution speed movies and television. This higher speed was made possible modulation technique OFDMA (Orthogonal Frequency Division Multiple Access) and antenna tehnique MIMO (Multiple Input Multiple Output). MIMO uses multible antennas inside to communication both end devices and base stations. 
+Fourth generation (4G) mobile technology such as WiMAX data speed 20-
+100Mbps was suitable for high resolution speed movies and television. 
+This higher speed was made possible modulation technique OFDMA 
+(Orthogonal Frequency Division Multiple Access) and antenna technique 
+MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside 
+to communication both end devices and base stations. 
 
-Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 
+Fifth generation (5G) data speed is estimated to be 10Gbps. 5G uses 
+enhanced MIMO technology and millimeter waves. It will support seamless 
+connectivity to support the internet of things such as driverless cars 
+and smart homes. 
+
+-- Cellular networks for submarine communication
+Cellular networks are easy way to transfer huge amounts of data in mobile 
+environment. Cellular technologies, fourth generation (4G) and fifth 
+generation (5G) are in common use and reliable on land, but it doesn’t 
+give much for underwater use. Newest high data rate cellular technologies 
+use high frequencies with low effective range and tight mesh network. Due 
+to physics of radio waves in water, high frequencies have extremely low 
+range in water environment and are not effective to use. Seawater does 
+have great absorption and is very conductive for high frequencies which 
+makes low frequencies more commonly used.  
 
 
 
