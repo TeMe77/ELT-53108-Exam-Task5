@@ -74,4 +74,24 @@ There are many cellular technologies which can be used in cellular networks. For
 Multiplexing techniques such as FDM, TDM and CDMA enables users to communicate at the same time using same channel.
 		
 
+-Outband Communications
+
+--History of mobile network:
+Fist generation (1G) mobile technology such as NMT enabled users to carry phone without cable connect to it. There were two major problems in this. Connection used analog signals to transfer data to reciever. That was errorprone way to transfer data because analog signal is more sensitive to interference than digitan signal. Other problem was that First generation used FDMA (Frequency Division Multiple Access) modulation technique to reserve frequency from base stations, which reserved available spectrum inefficient way. 
+	NMT (Nordiska MobileTelefongruppen) first used frequency band of 450MHz but when capasity was running out 900MHz frequency band was introduced in many countries to NMT use. 
+
+Second generation (2G) mobile technology such as GSM, CDMA and EDGE used modulation techniques as TDMA and CDMA. 2G also intruduced dataservice (50Kbps) and internet browsing. 
+	GSM (Global System for Mobile Communications) first used frequency band of 900MHz but when capasity was running out 1800MHz frequency band was introduced in many countries to GSM use. Also 850MHz and 1900MHz was introduced to use in some countries. Mainly in USA. So frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
+
+Third generation (3G) mobile technology such as WCDMA and HSPA was focused to give higher data transfer speed and increased bandwith (2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were Used WCDMA (Wideband Code Divion Multiple Access). 3G was a great step moving from basic phone to smartphone.
+	HSPA (High-Speed Packet Access) has few standards itself HSDPA (High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands than GSM. Used frequency bands were 850MHz and 1900MHz.
+
+Fourth generation (4G) mobile technology such as WiMAX data speed 20-100Mbps was suitable for high resolution speed movies and television. This higher speed was made possible modulation technique OFDMA (Orthogonal Frequency Division Multiple Access) and antenna tehnique MIMO (Multiple Input Multiple Output). MIMO uses multible antennas inside to communication both end devices and base stations. 
+
+Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 
+
+
+
+
+
 
