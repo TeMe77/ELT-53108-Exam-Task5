@@ -181,10 +181,15 @@ This higher speed was made possible modulation technique OFDMA
 MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside 
 to communication both end devices and base stations. 
 
-Fifth generation (5G) data speed is estimated to be 10Gbps. 5G uses 
-enhanced MIMO technology and millimeter waves. It will support seamless 
-connectivity to support the internet of things such as driverless cars 
-and smart homes. 
+Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 5G frequancy bands can be divided in few category. Low-band frequancy 600-700MHz can deliver data speed 30 Mbps - 150 Mbps. Mid-band uses microwawe frequancy 2.5 GHz- 3.7 GHz delivering data speed 100 Mbps -  900 Mbps. High-band uses frequancy 25 GHz - 39 GHz and can deliver data speed up to 1 - 3 Gbps. 
+
+Thoughts how this information helps us planning underwater connections
+The lower the used signal frequency is the farther signals travel. Underwater signal won't traver so far than air that means we cannot directly compare signal travel lenght underwater and in air but the principle is the same. 
+
+The higher the used signal frequency is the bigger transmission capacity is. 
+
+The better the coding in signal multiplexing technique and better antenna technique is used the better quality, reliability and more capasity in signal is.
+
 
 -- Cellular networks for submarine communication
 Cellular networks are easy way to transfer huge amounts of data in mobile 
