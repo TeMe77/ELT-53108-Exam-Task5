@@ -34,9 +34,66 @@ Users are separated with unique codes.
 -	- 5G (Fifth Generation)
 -	- Pros & Cons of different technologies
 
+
+
+
 Submarine communications
+
+-Cellular networks
+
+--History of mobile network:
+Fist generation (1G) mobile technology such as NMT enabled users to carry
+phone without cable connect to it. There were two major problems in this.
+Connection used analog signals to transfer data to receiver. That was
+errorprone way to transfer data because analog signal is more sensitive
+to interference than digital signal. Other problem was that First
+generation used FDMA (Frequency Division Multiple Access) modulation
+technique to reserve frequency from base stations, which reserved
+available spectrum inefficient way.
+        NMT (Nordiska MobileTelefongruppen) first used frequency band
+of 450MHz but when capacity was running out 900MHz frequency band was
+introduced in many countries to NMT use.
+
+Second generation (2G) mobile technology such as GSM, CDMA and EDGE used
+modulation techniques as TDMA and CDMA. 2G also introduced data service
+(50Kbps) and internet browsing.
+        GSM (Global System for Mobile Communications) first used
+frequency band of 900MHz but when capacity was running out 1800MHz
+frequency band was introduced in many countries to GSM use. Also, 850MHz
+and 1900MHz was introduced to use in some countries. Mainly in USA. So,
+frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
+
+Third generation (3G) mobile technology such as WCDMA and HSPA was
+focused to give higher data transfer speed and increased bandwidth
+(2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were
+Used WCDMA (Wideband Code Division Multiple Access). 3G was a great step
+moving from basic phone to smartphone.
+        HSPA (High-Speed Packet Access) has few standards itself HSDPA
+(High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet
+Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands
+than GSM. Used frequency bands were 850MHz and 1900MHz.
+
+Fourth generation (4G) mobile technology such as WiMAX data speed 20-
+100Mbps was suitable for high resolution speed movies and television.
+This higher speed was made possible modulation technique OFDMA
+(Orthogonal Frequency Division Multiple Access) and antenna technique
+MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside
+to communication both end devices and base stations.
+        WiMAX (Worldwide Interoperability for Microwave Access) used frequency band of 20 GHz - 66 GHz and data speed can be up to 75 Mbps.
+
+Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 5G frequ>
+
+Thoughts how this information helps us planning underwater connections
+The lower the used signal frequency is the farther signals travel. Underwater signal won't traver so far than air that means we cannot directly compare signal travel lenght underwater and in air but the principle is the same.
+
+The higher the used signal frequency is the bigger transmission capacity is.
+
+The better the coding in signal multiplexing technique and better antenna technique is used the better quality, reliability and more capasity in signal is.
+
+--Roaming
+
 	
--Different use cases
+--Different use cases
 Submarine networking and communications can be divided for internal use 
 inside the ship and outbound use, which includes all outbound connections 
 and transmissions from the ship.
@@ -142,55 +199,6 @@ distance than in air.
 Multiplexing techniques such as FDM, TDM and CDMA enables users to 
 communicate at the same time using same channel.
 		
---History of mobile network:
-Fist generation (1G) mobile technology such as NMT enabled users to carry 
-phone without cable connect to it. There were two major problems in this. 
-Connection used analog signals to transfer data to receiver. That was 
-errorprone way to transfer data because analog signal is more sensitive 
-to interference than digital signal. Other problem was that First 
-generation used FDMA (Frequency Division Multiple Access) modulation 
-technique to reserve frequency from base stations, which reserved 
-available spectrum inefficient way. 
-	NMT (Nordiska MobileTelefongruppen) first used frequency band 
-of 450MHz but when capacity was running out 900MHz frequency band was 
-introduced in many countries to NMT use. 
-
-Second generation (2G) mobile technology such as GSM, CDMA and EDGE used 
-modulation techniques as TDMA and CDMA. 2G also introduced data service 
-(50Kbps) and internet browsing. 
-	GSM (Global System for Mobile Communications) first used 
-frequency band of 900MHz but when capacity was running out 1800MHz 
-frequency band was introduced in many countries to GSM use. Also, 850MHz 
-and 1900MHz was introduced to use in some countries. Mainly in USA. So, 
-frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
-
-Third generation (3G) mobile technology such as WCDMA and HSPA was 
-focused to give higher data transfer speed and increased bandwidth 
-(2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were 
-Used WCDMA (Wideband Code Division Multiple Access). 3G was a great step 
-moving from basic phone to smartphone.
-	HSPA (High-Speed Packet Access) has few standards itself HSDPA 
-(High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet 
-Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands 
-than GSM. Used frequency bands were 850MHz and 1900MHz.
-
-Fourth generation (4G) mobile technology such as WiMAX data speed 20-
-100Mbps was suitable for high resolution speed movies and television. 
-This higher speed was made possible modulation technique OFDMA 
-(Orthogonal Frequency Division Multiple Access) and antenna technique 
-MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside 
-to communication both end devices and base stations. 
-	WiMAX (Worldwide Interoperability for Microwave Access) used frequency band of 20 GHz - 66 GHz and data speed can be up to 75 Mbps. 
-
-Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 5G frequancy bands can be divided in few category. Low-band frequancy 600-700MHz can deliver data speed 30 Mbps - 150 Mbps. Mid-band uses microwawe frequancy 2.5 GHz- 3.7 GHz delivering data speed 100 Mbps -  900 Mbps. High-band uses frequancy 25 GHz - 39 GHz and can deliver data speed up to 1 - 3 Gbps. 
-
-Thoughts how this information helps us planning underwater connections
-The lower the used signal frequency is the farther signals travel. Underwater signal won't traver so far than air that means we cannot directly compare signal travel lenght underwater and in air but the principle is the same. 
-
-The higher the used signal frequency is the bigger transmission capacity is. 
-
-The better the coding in signal multiplexing technique and better antenna technique is used the better quality, reliability and more capasity in signal is.
-
 
 -- Cellular networks for submarine communication
 Cellular networks are easy way to transfer huge amounts of data in mobile 
