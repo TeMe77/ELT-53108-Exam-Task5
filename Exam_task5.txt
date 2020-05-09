@@ -16,12 +16,12 @@ Outbound communications
 -	Roaming
 -	Protocols
 -	Multiplexing technique
--	- FDM (Frequency Division Multiplexing) 
+-	- FDMA (Frequency Division Multiplexing Access) 
 In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. 
--	- TDM (Time Division Multiplexing)
+-	- TDMA (Time Division Multiplexing Access)
 In TDM every user is operating in same frequency, but they are divided in 
 different time slots so they appear to work parallel. 
--	- CDMA (Code Division Multiplexing)
+-	- CDMA (Code Division Multiplexing Access)
 In CDMA several users can use same medium and frequency at the same time. 
 Users are separated with unique codes. 
 -	Cellular technologies 3GPP
