@@ -93,6 +93,22 @@ The better the coding in signal multiplexing technique and better antenna techni
 --Roaming
 Roaming in mobile network means that your communication is transferred from one base station to another base station and hopefully without your for example call to disconnect. In submarine it is important that your connection won't disconnect and you always have connection if that is available. It is another thing if you sail somewhere were are no network available but if there is and there is problems in connection when you are moving then the problem might be in roaming in. 
 
+--Multiplexing
+Multiplexing means that when two or more signals combines and use the same channel for transmission.  
+
+---Multiplexing techniques
+    - FDMA (Frequency Division Multiplexing Access)
+In FDM every user is operating in different frequency. All frequencies
+can travel at the same time across the medium. For example FDMA was used in the First generation (1G) mobile techniques. Problem with this technique is that it reserves the channel for all the users in the area so bandwith with users are small. Frequency band is not effectively used in this technique because there have to be security band between used band so  signals don't mix with each other.  
+
+	- TDMA (Time Division Multiplexing Access)
+In TDM every user is operating in same frequency, but they are divided in
+different time slots so they appear to work parallel.
+	- CDMA (Code Division Multiplexing Access)
+In CDMA several users can use same medium and frequency at the same time.
+Users are separated with unique codes.
+	- OFDM
+
 	
 --Different use cases
 Submarine networking and communications can be divided for internal use 
