@@ -91,6 +91,7 @@ The higher the used signal frequency is the bigger transmission capacity is.
 The better the coding in signal multiplexing technique and better antenna technique is used the better quality, reliability and more capasity in signal is.
 
 --Roaming
+Roaming in mobile network means that your communication is transferred from one base station to another base station and hopefully without your for example call to disconnect. In submarine it is important that your connection won't disconnect and you always have connection if that is available. It is another thing if you sail somewhere were are no network available but if there is and there is problems in connection when you are moving then the problem might be in roaming in. 
 
 	
 --Different use cases
