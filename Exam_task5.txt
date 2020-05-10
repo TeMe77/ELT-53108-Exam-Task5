@@ -118,25 +118,18 @@ Multiplexing means that when two or more signals combines and use the
 same channel for transmission.  
 
 --Multiplexing techniques
-    
+
 --- FDMA (Frequency Division Multiplexing Access)
-In FDM every user is operating in different frequency. All frequencies
-can travel at the same time across the medium. For example, FDMA was used 
-in the First generation (1G) mobile techniques. Problem with this 
-technique is that it reserves the channel for all users in the area so 
-bandwidth for users are narrow. Frequency band is not effectively used in 
-this technique, because there is need to have security band between used 
-band, so signals won’t mix with each other.  
+In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. For example, FDMA was used in the First generation (1G) mobile techniques. Problem with this technique was that it reserves the channel for users in the base station area so bandwidth for active users. Because of this frequency band is not effectively used in this technique, because there is need to have guard bands between used band which were allocated to users, that was done because signals wouldnâ€™t mix with each other. This multiplexing technique suffered from intersymbol interference (ISI). ISI is phenomenon where previous symbols have similar effect, which makes communication less reliable.
 
 --- TDMA (Time Division Multiplexing Access)
-In TDM every user is operating in same frequency, but users are divided 
-in different time slots, so they appear to work parallel.
+In TDM every user is operating in same frequency, but users are divided in different time slots, so they appear to work parallel. TDMA was used in second generation (2G) mobile telecommunication technology such as GSP, GSRP and EDGE. Comment about this technique that there was no guard band and when users had their own timeslot, they could use the whole spectrum but if the transmission didnt fit in the timeslot they would have to wait next one.  
 
---- CDMA (Code Division Multiplexing Access)
-In CDMA several users can use same medium and frequency at the same time.
-Users are separated from each other with unique codes.
+--- CDMA (Code Division Multiplexing Access) and 
+In CDMA several users can use same medium and frequency at the same time. Users are separated from each other with unique codes. CDMA is used in third generation (3G) mobile telecommunication technology such as CDMA. If there is multiple users in the area then there is multiple code to register the users. This multiplexing technique suffered from intersymbol interference (ISI) ISI is phenomenon where previous symbols have similar effect, which makes communication less reliable and that can cause Limitations less data rate, congestion, resources waste, bandwidth efficiency.
 
---- OFDM
+--- OFDMA (Orthogonal Frequency Division Multiple Access)
+In OFDMA different numbers of sub-carriers where users are allocated which signals are orthogonal to each other. OFDMA can be thought as a combination with FDMA and TDMA. OFDM is used in Fourth generation (4G) mobile telecommunication technologies such as LTE. OFDMA dont require guard band like FDMA. In OFDMA there are no such big problem in frequency mix than FDMA. When there is no guard band required data speed can be larger. When OFDMA is compared to FDMA, TDMA and CDMA there is more data rate and more reliable data transfer than previously previewed modulation technologies. 
 
 	
 --Different use cases
