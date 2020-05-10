@@ -42,72 +42,101 @@ Submarine communications
 -Cellular networks
 
 --History of mobile network:
-Fist generation (1G) mobile technology such as NMT enabled users to carry
-phone without cable connect to it. There were two major problems in this.
-Connection used analog signals to transfer data to receiver. That was
-errorprone way to transfer data because analog signal is more sensitive
-to interference than digital signal. Other problem was that First
-generation used FDMA (Frequency Division Multiple Access) modulation
-technique to reserve frequency from base stations, which reserved
-available spectrum inefficient way.
-        NMT (Nordiska MobileTelefongruppen) first used frequency band
+Fist generation (1G) mobile technology such as NMT, enabled users to 
+carry phone without cable connected for it. There were two major problems 
+in this approach. Connections used analogue signals to transfer data to 
+receiver, that was error prone way to transfer data because analogue 
+signal is more sensitive to interference than digital signal. Other 
+problem was that First generation used FDMA (Frequency Division Multiple 
+Access) modulation technique to reserve frequency from base stations, 
+which reserved available spectrum inefficient way.
+
+---NMT (Nordiska MobileTelefongruppen) first used frequency band
 of 450MHz but when capacity was running out 900MHz frequency band was
 introduced in many countries to NMT use.
 
-Second generation (2G) mobile technology such as GSM, CDMA and EDGE used
-modulation techniques as TDMA and CDMA. 2G also introduced data service
-(50Kbps) and internet browsing.
-        GSM (Global System for Mobile Communications) first used
-frequency band of 900MHz but when capacity was running out 1800MHz
-frequency band was introduced in many countries to GSM use. Also, 850MHz
-and 1900MHz was introduced to use in some countries. Mainly in USA. So,
-frequency bands 850MHz, 900MHz, 1850MHz and 1900MHz was used in GSM.
+---Second generation (2G) mobile technology such as GSM, CDMA and EDGE 
+used modulation techniques such as TDMA and CDMA. 2G also introduced data 
+service (50Kbps) and internet browsing.
 
-Third generation (3G) mobile technology such as WCDMA and HSPA was
+---GSM (Global System for Mobile Communications) first used
+frequency band of 900MHz, but when capacity was running out, 1800MHz
+frequency band was introduced in many countries for GSM to use. Also, 
+850MHz and 1900MHz was introduced to use in some countries (mainly in 
+USA). Overall frequency bands used for GSM were 850MHz, 900MHz, 1850MHz 
+and 1900MHz.
+
+----Third generation (3G) mobile technology such as WCDMA and HSPA are
 focused to give higher data transfer speed and increased bandwidth
-(2Mbps). Higher data speed allowed to use GPS and videocalls. In 3G were
-Used WCDMA (Wideband Code Division Multiple Access). 3G was a great step
-moving from basic phone to smartphone.
-        HSPA (High-Speed Packet Access) has few standards itself HSDPA
-(High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet
-Access) and HSPA+ (HSPA Evolved). HSPA used almost same frequency bands
-than GSM. Used frequency bands were 850MHz and 1900MHz.
+(2Mbps). Higher data speed allows user to have GPS and videocalls. In 3G 
+WCDMA (Wideband Code Division Multiple Access) is used. 3G was a great 
+step moving from basic phone to smartphone.
 
-Fourth generation (4G) mobile technology such as WiMAX data speed 20-
+---HSPA (High-Speed Packet Access) has few standards itself HSDPA
+(High Speed Downlink Packet Access), HSUPA (High Speed Uplink Packet
+Access) and HSPA+ (HSPA Evolved). HSPA uses almost same frequency bands
+than GSM. Frequency bands used are 850MHz and 1900MHz.
+
+---Fourth generation (4G) mobile technology such as WiMAX data speed 20-
 100Mbps was suitable for high resolution speed movies and television.
 This higher speed was made possible modulation technique OFDMA
 (Orthogonal Frequency Division Multiple Access) and antenna technique
 MIMO (Multiple Input Multiple Output). MIMO uses multiple antennas inside
-to communication both end devices and base stations.
-        WiMAX (Worldwide Interoperability for Microwave Access) used frequency band of 20 GHz - 66 GHz and data speed can be up to 75 Mbps.
+to communication both end devices and base stations. WiMAX (Worldwide 
+Interoperability for Microwave Access) used frequency band of 20 GHz - 66 
+GHz and data speed can be up to 75 Mbps.
 
-Fifth generation (5G) data speed is esimated to be 10Gbps. 5G uses enchanced MIMO technology and millimeter wawes. It will support seamless connectivity to support the internet of things such as driverless cars and smart homes. 5G frequ>
+---Fifth generation (5G) data speed is estimated to be 10Gbps. 5G uses 
+enhanced MIMO technology and millimeter waves. It will support seamless 
+connectivity to support the internet of things such as driverless cars 
+and smart homes.
 
-Thoughts how this information helps us planning underwater connections
-The lower the used signal frequency is the farther signals travel. Underwater signal won't traver so far than air that means we cannot directly compare signal travel lenght underwater and in air but the principle is the same.
+Thoughts how this information helps us planning underwater connections, 
+the lower the used signal frequency is, the farther signals will travel. 
+Underwater signal won't travel so far than it would in air, so that means 
+we cannot directly compare signal travel length underwater and, in the 
+air, but the principle is the same.
 
-The higher the used signal frequency is the bigger transmission capacity is.
+The higher the used signal frequency is the bigger transmission capacity 
+is.
 
-The better the coding in signal multiplexing technique and better antenna technique is used the better quality, reliability and more capasity in signal is.
+The better the coding in signal multiplexing technique and better antenna 
+technique is used the better quality, reliability and more capacity in 
+signal is.
 
 --Roaming
-Roaming in mobile network means that your communication is transferred from one base station to another base station and hopefully without your for example call to disconnect. In submarine it is important that your connection won't disconnect and you always have connection if that is available. It is another thing if you sail somewhere were are no network available but if there is and there is problems in connection when you are moving then the problem might be in roaming in. 
+Roaming in mobile network is that vessels communication is transferred 
+from one base station to another base station and hopefully without 
+connection to disconnect. In submarine it is important that your 
+connection won't disconnect, and vessel always have connection if it is 
+available. It is another thing if vessel sails somewhere where are no 
+networks available, this can also be if vessel can’t use roaming to join 
+new network.
 
---Multiplexing
-Multiplexing means that when two or more signals combines and use the same channel for transmission.  
+-Multiplexing
+Multiplexing means that when two or more signals combines and use the 
+same channel for transmission.  
 
----Multiplexing techniques
-    - FDMA (Frequency Division Multiplexing Access)
+--Multiplexing techniques
+    
+--- FDMA (Frequency Division Multiplexing Access)
 In FDM every user is operating in different frequency. All frequencies
-can travel at the same time across the medium. For example FDMA was used in the First generation (1G) mobile techniques. Problem with this technique is that it reserves the channel for all the users in the area so bandwith with users are small. Frequency band is not effectively used in this technique because there have to be security band between used band so  signals don't mix with each other.  
+can travel at the same time across the medium. For example, FDMA was used 
+in the First generation (1G) mobile techniques. Problem with this 
+technique is that it reserves the channel for all users in the area so 
+bandwidth for users are narrow. Frequency band is not effectively used in 
+this technique, because there is need to have security band between used 
+band, so signals won’t mix with each other.  
 
-	- TDMA (Time Division Multiplexing Access)
-In TDM every user is operating in same frequency, but they are divided in
-different time slots so they appear to work parallel.
-	- CDMA (Code Division Multiplexing Access)
+--- TDMA (Time Division Multiplexing Access)
+In TDM every user is operating in same frequency, but users are divided 
+in different time slots, so they appear to work parallel.
+
+--- CDMA (Code Division Multiplexing Access)
 In CDMA several users can use same medium and frequency at the same time.
-Users are separated with unique codes.
-	- OFDM
+Users are separated from each other with unique codes.
+
+--- OFDM
 
 	
 --Different use cases
@@ -156,37 +185,38 @@ joining to global network. Data is transferred mostly by cellular
 networks, but also Wi-Fi can be used in close range transfers.
 
 --Communication with other vessels
-Communicating with other vessels is important in many ways. Communicating 
-with other vessel we could use message-based systems with for example 
+Communicating with other vessels is always important to maintain. For 
+communicating with other vessels, vessel could use message-based systems,
 techniques like SMS (Short Message Service) or anything like that. SMS is 
 widely used in mobile devices. SMS are used in techniques like GSM. 
-Benefit to use low radio waves in submarine is that low frequency traffic 
-is transported in water better than high frequency traffic. 
-Another communicating type could be internet calls like VoIP and 
+Benefit to use low frequency radio waves in submarine is because low 
+frequency waves travel in water much better than high frequency waves. 
+Another communication type could be internet calls like VoIP and 
 videocalls. VoIP and videocalls could be used when there are important 
-negotions in the dock between submarines where there are better 
-connections to other vessels. Long distance calls we could use for 
-example low frequency calls directly to other vessels or via base station
+communications between submarines at dock, at dock there are better 
+connections to other vessels because base stations could be located at 
+docks. For long distance calls vessel could use low frequency connections 
+directly to other vessel or via base station.
 
-It is important that submarine knows other vessels position, estimated 
-route and status. In example radar could terminate position of other 
-vessels. Radar sends radio waves and waits it to echo back and counts the 
-position of other vessels. Radar could use both TCP and UDP protocols 
-based from the application requirements. Some radar systems can tolerate 
-packet loss and reordering packets. Then vessel could use UDP based 
-design in vessel’s system. Using UDP-based positioning system is more 
-precise and faster determining positions, on the other hand if you 
-application do not tolerate packet loss or reordering packets then you 
-must use TCP-based design. Benefits to use TCP-based system is that it 
-won't consume so much resources because fewer number of packets are 
-transferred but determination of positioning and estimated route takes 
-more time that UDP-based system.
+It is important that submarine knows position of other vessel, its 
+planned route and status. For example, radar could give information about 
+position of other vessels. Radar sends radio waves and waits environment 
+to echo waves back and counts the position of other vessels. Radar could 
+use both TCP and UDP protocols based from the application requirements. 
+Some radar systems can tolerate packet loss and reordering packets. Then 
+vessel could use UDP based design in vessels system. Using UDP-based 
+positioning system is more precise and faster determining positions, but 
+if the used application does not tolerate any packet loss or reordering 
+packets, then it must use TCP-based design. Benefits to use TCP-based 
+system is that it won't consume so much resources because fewer number of 
+packets are transferred but determination of positioning and estimated 
+route takes more time that UDP-based system.
 
-Systems that are used for communicating another vessels and radar systems 
-are critical traffic from a submarine perspective. Those two types of 
-communication are important that they have on frequency which they 
-operate. Congested frequency could cause packet loss, delay, jitter and 
-loss of signal.
+Systems that are used for communicating another vessels and radar 
+systems, those are critical traffic from a submarine perspective. Those 
+two types of communications are important that they are on frequency 
+which they operate. Congested frequency could cause packet loss, delay, 
+jitter, and loss of signal.
 
 Submarines could use multi-path technologies to gain higher data rates in 
 close connections. Faster network can be achieved by summarizing two 
@@ -199,20 +229,21 @@ as secondary.
 
 --Communication with cellular network
 Basically, almost all communication from submarine is going throw base 
-stations for example cellular networks. In exceptions you could think 
-examples radar systems and communication systems that are used to 
-communicate straight to vessel-to-vessel.
-If there comes such a time. Dystopia or utopia and there comes need to 
-implement cellular network in the ocean there is important that that 
-cells have decent connection to each other. There must be adequate signal 
-to other cells that users(submarines) won't suffer from connections bad 
-quality that could cause packet loss, jitter, and packet delay. 
+stations, good example for connection is cellular networks. In exceptions 
+vessel will use radar systems and communication systems that directly 
+connected vessel-to-vessel. If there comes such a time, dystopia or 
+utopia and there comes need to implement large scale cellular network in 
+the ocean, there is important to note that cells need to have decent 
+connection to each other. This will need high power antennas and new 
+implementations for low frequency band. There must be adequate signal to 
+other cells that users(submarines) won't suffer from bad quality 
+connection what could cause packet loss, jitter, and packet delay. 
 
-There are many cellular technologies which can be used in cellular 
-networks. For example, you could think using GSM, GPRS, CDMA, EDGE, UMTS, 
-3G, 4G, 5G technologies. One main thing to remember is that in water low 
-frequency travels better so high frequency techniques have much shorter 
-distance than in air. 
+There are many technologies which can be used in cellular networks. For 
+example, vessel could be using GSM, GPRS, CDMA, EDGE, UMTS, 3G, 4G or 5G 
+technologies. One important thing to remember in water, is that low 
+frequency travels much better than high frequency techniques, in water 
+radios waves have much shorter distance than those would be in air. 
 Multiplexing techniques such as FDM, TDM and CDMA enables users to 
 communicate at the same time using same channel.
 		
