@@ -1,38 +1,25 @@
 Task 5: Submarine communications (latency)
 SUBMARINE NETWORK PROJECT 0.1
 Submarine communications
--	Different use cases
--	- Technologies & requirements
-Challenges for underwater communication
--	physical limitations
+-       Different use cases
+-       - Technologies & requirements                          *
+Mitä tekniikoita käsiteltiin. Mitä suljimme pois.
+Kiinteitä yhteyksiä hankala toteuttaa liikkuvalla menopelillä 
+Mitä tekniikoita skenaario tarvisi
+-       physical limitations                                    *
+Vesi vaimentaa enemmäin kuin ilma
+
 Communications inside Submarine
--	Underwater Wi-Fi
--	- 2.4 Ghz VS 5 Ghz 
--	- Signal penetration reflections and absorption
--	Protocols
+-       Underwater Wi-Fi
+-       - 2.4 Ghz VS 5 Ghz
+-       - Signal penetration reflections and absorption        *
+Lyhyesti tämä tähän
+
+-       Protocols
 Outbound communications
--	Ultrasound Cellular Network
--	Underwater challenges for Cellular
--	Roaming
--	Protocols
--	Multiplexing technique
--	- FDMA (Frequency Division Multiplexing Access) 
-In FDM every user is operating in different frequency. All frequencies 
-can travel at the same time across the medium. 
--	- TDMA (Time Division Multiplexing Access)
-In TDM every user is operating in same frequency, but they are divided in 
-different time slots so they appear to work parallel. 
--	- CDMA (Code Division Multiplexing Access)
-In CDMA several users can use same medium and frequency at the same time. 
-Users are separated with unique codes. 
--	Cellular technologies 3GPP
--	- GSM (Global System for Mobile communication)
--	- GSPS (General Packet Radio Services)
--	- CDMA (Code Division Multiple Access)
--	- 3G (Third Generation)
--	- 4G (Fourth Generation)
--	- 5G (Fifth Generation)
--	- Pros & Cons of different technologies
+-       Ultrasound Cellular Network                            *
+Mitä hyötyä ja haittaa ja jos eläimet sekoisivat
+
 
 
 
