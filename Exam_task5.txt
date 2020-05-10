@@ -18,13 +18,43 @@ Lyhyesti t√§m√§ t√§h√§n
 -       Protocols
 Outbound communications
 -       Ultrasound Cellular Network                            *
-Mit√§ hy√∂ty√§ ja haittaa ja jos el√§imet sekoisivat
+Mit√§ hy√ty√§ ja haittaa ja jos el√§imet sekoisivat
 
 
 
 
 
-Submarine communications
+-Submarine communications
+
+-- Technologies for underwater communications
+Technologies for underwater use needs long travel distances and high 
+reliability. Submarines can be far away from another vessel or base 
+station, that means vessel can barely use low range techniques with high 
+data rate. Technologies like Wi-Fi and WiMAX could be used in low range 
+communications with decent data rates. Cellular technologies 4G and 5G 
+are providing high data rates in air, but range is very limited in 
+underwater use. Lower data rate technologies in cellular networks are 
+preferred because range of signal. 
+
+Communicating with stations on land most submarines currently use bands 
+between 3-300Hz and 3-30kHz, both bands are mainly used by military 
+applications and need high power antennas. As example 82 Hertz Russian 
+system have wavelength of 3656 kilometres, it has great range but 
+extremely low data rate. Antenna is huge ground dipole (power 10-14 MW) 
+and transmissions are fed directly to ground, this can send information 
+to deep water submarines. Submarines on sea surface can also use normal 
+naval technologies like HF (High frequency 3-30 MHz), VHF (Very high 
+frequency 30-300MHz) and UHF (Ultra high frequency 300MHz-3GHz).
+
+-- Physical limitations & Challenges                                                              
+Biggest challenge for communications and networks underwater is physics. 
+Signal donít travel so far as it would travel in the air. There is also 
+differences in fresh water and sea water such as sea water is more 
+conductive than fresh water. Water conductivity is given in Siemens per 
+meter (S/m) and value for fresh water differs from 0 to 1. Sea water 
+conductivity value differs a lot, as Arctic sea have conductivity value 
+of 2 S/m and Red Sea have conductivity value of 8 S/m. Higher the 
+conductivity is, lower the range of signals are.
 
 -Cellular networks
 
@@ -74,7 +104,7 @@ Interoperability for Microwave Access) used frequency band of 20 GHz - 66
 GHz and data speed can be up to 75 Mbps.
 
 ---Fifth generation (5G) data speed is estimated to be 10Gbps. 5G uses 
-enhanced MIMO technology and millimeter waves. It will support seamless 
+enhanced MIMO technology and millimetre waves. It will support seamless 
 connectivity to support the internet of things such as driverless cars 
 and smart homes.
 
@@ -88,7 +118,7 @@ The higher the used signal frequency is the bigger transmission capacity
 is.
 
 The better the coding in signal multiplexing technique and better antenna 
-technique is used the better quality, reliability and more capacity in 
+technique is used the better quality, reliability, and more capacity in 
 signal is.
 
 --Roaming
@@ -107,16 +137,48 @@ same channel for transmission.
 --Multiplexing techniques
 
 --- FDMA (Frequency Division Multiplexing Access)
-In FDM every user is operating in different frequency. All frequencies can travel at the same time across the medium. For example, FDMA was used in the First generation (1G) mobile techniques. Problem with this technique was that it reserves the channel for users in the base station area so bandwidth for active users. Because of this frequency band is not effectively used in this technique, because there is need to have guard bands between used band which were allocated to users, that was done because signals wouldn‚Äôt mix with each other. This multiplexing technique suffered from intersymbol interference (ISI). ISI is phenomenon where previous symbols have similar effect, which makes communication less reliable.
+In FDM every user is operating in different frequency. All frequencies 
+can travel at the same time across the medium. For example, FDMA was used 
+in the First generation (1G) mobile techniques. Problem with this 
+technique was that it reserves the channel for users in the base station 
+area so bandwidth for active users. Because of this frequency band is not 
+effectively used in this technique, because there is need to have guard 
+bands between used band which were allocated to users, that was done 
+because signals wouldnít mix with each other. This multiplexing technique 
+suffered from intersymbol interference (ISI). ISI is phenomenon where 
+previous symbols have similar effect, which makes communication less 
+reliable.
 
 --- TDMA (Time Division Multiplexing Access)
-In TDM every user is operating in same frequency, but users are divided in different time slots, so they appear to work parallel. TDMA was used in second generation (2G) mobile telecommunication technology such as GSP, GSRP and EDGE. Comment about this technique that there was no guard band and when users had their own timeslot, they could use the whole spectrum but if the transmission didnt fit in the timeslot they would have to wait next one.  
+In TDM every user is operating in same frequency, but users are divided 
+in different time slots, so they appear to work parallel. TDMA was used 
+in second generation (2G) mobile telecommunication technology such as 
+GSP, GSRP and EDGE. Comment about this technique that there was no guard 
+band and when users had their own timeslot, they could use the whole 
+spectrum but if the transmission didnít fit in the timeslot, they would 
+have to wait next one.  
 
 --- CDMA (Code Division Multiplexing Access) and 
-In CDMA several users can use same medium and frequency at the same time. Users are separated from each other with unique codes. CDMA is used in third generation (3G) mobile telecommunication technology such as CDMA. If there is multiple users in the area then there is multiple code to register the users. This multiplexing technique suffered from intersymbol interference (ISI) ISI is phenomenon where previous symbols have similar effect, which makes communication less reliable and that can cause Limitations less data rate, congestion, resources waste, bandwidth efficiency.
+In CDMA several users can use same medium and frequency at the same time. 
+Users are separated from each other with unique codes. CDMA is used in 
+third generation (3G) mobile telecommunication technology such as CDMA. 
+If there are multiple users in the area, then there is multiple code to 
+register the users. This multiplexing technique suffered from intersymbol 
+interference (ISI) ISI is phenomenon where previous symbols have similar 
+effect, which makes communication less reliable and that can cause 
+Limitations less data rate, congestion, resources waste, bandwidth 
+efficiency.
 
 --- OFDMA (Orthogonal Frequency Division Multiple Access)
-In OFDMA different numbers of sub-carriers where users are allocated which signals are orthogonal to each other. OFDMA can be thought as a combination with FDMA and TDMA. OFDM is used in Fourth generation (4G) mobile telecommunication technologies such as LTE. OFDMA dont require guard band like FDMA. In OFDMA there are no such big problem in frequency mix than FDMA. When there is no guard band required data speed can be larger. When OFDMA is compared to FDMA, TDMA and CDMA there is more data rate and more reliable data transfer than previously previewed modulation technologies. 
+In OFDMA different numbers of sub-carriers where users are allocated 
+which signals are orthogonal to each other. OFDMA can be thought as a 
+combination with FDMA and TDMA. OFDM is used in Fourth generation (4G) 
+mobile telecommunication technologies such as LTE. OFDMA donít require 
+guard band like FDMA. In OFDMA there are no such big problem in frequency 
+mix than FDMA. When there is no guard band required data speed can be 
+larger. When OFDMA is compared to FDMA, TDMA and CDMA there is more data 
+rate and more reliable data transfer than previously previewed modulation 
+technologies. 
 
 	
 --Different use cases
@@ -141,12 +203,14 @@ for all data gathering and monitoring.
 
 ---Internal Communication
 Internal network for crew communications is done by wire, network is 
-wired mainly by optical fiber. Fiber is chosen over copper because 
+wired mainly by optical fiber. Fiber optics is chosen over copper because 
 submarine have tight spaces for wiring and wiring can be done next to 
 power cables with fiber (power cables can cause noise for copper cables). 
-Internal communication could be done by Wi-Fi also, but it needs wired 
-core network in every section of submarine. Wi-Fi coverage can be 
-achieved by adding access points to every section of vessel.
+Fiber optics easily outperform copper cables and saves lot of space due 
+to size of single fiber versus copper pair. Internal communication could 
+be done by Wi-Fi also, but it needs wired core network in every section 
+of submarine. Wi-Fi coverage can be achieved by adding access points to 
+every section of vessel.
 
 ---- Wi-Fi for submarine and itís challenges
 Wi-Fi network is fast and decently reliable to use for fixed size of 
@@ -178,7 +242,7 @@ connections to other vessels because base stations could be located at
 docks. For long distance calls vessel could use low frequency connections 
 directly to other vessel or via base station.
 
-It is important that submarine knows position of other vessel, its 
+It is important that submarine knows position of another vessel, its 
 planned route and status. For example, radar could give information about 
 position of other vessels. Radar sends radio waves and waits environment 
 to echo waves back and counts the position of other vessels. Radar could 
@@ -239,6 +303,14 @@ range in water environment and are not effective to use. Seawater does
 have great absorption and is very conductive for high frequencies which 
 makes low frequencies more commonly used.  
 
+--- Ultrasound communications
+
+Ultrasound wireless technologies could be solution for underwater 
+networking challenges, but itís not widely researched yet. It is known 
+that animals in sea use it a lot and it is working for them. There are 
+many questions raised about topic. How ultrasound transmitters would 
+affect sea environment and sea life? Could there be negative effects on 
+animals? How to filter out ìnoiseî signal from sea life?
 
 
 
