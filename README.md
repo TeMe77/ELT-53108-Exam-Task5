@@ -1,4 +1,4 @@
-# TeMe77 = Teemu Merisalo / 7boddy = Jussi Kivistö
+# TeMe77 = Teemu Merisalo / 7boddy/ 77boddy = Jussi Kivistö
 ## ELT-53108-Exam-Task5
 ELT-53108 Computer Networking II, Exam Task 5, Merisalo &amp; Kivistö
 
